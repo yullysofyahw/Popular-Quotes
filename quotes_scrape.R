@@ -10,7 +10,8 @@ data<-data.frame()
 page = 100
 for (i in 1:page){
   url <- paste0("https://www.goodreads.com/quotes?pages=",i)
-  url %>% GET(., timeout(30)) %>% read_html
+  url2 %>% url %>% GET(.,timeout(out)) 
+  html<-read(url2)
   html <- read_html(url)
   quote<- html_text(html_nodes(html, ".quoteText"), trim=T)
   by<- html_text(html_nodes(html, "span.authorOrTitle"), trim=T)
