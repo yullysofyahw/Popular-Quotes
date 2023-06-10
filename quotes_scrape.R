@@ -2,12 +2,15 @@
 message("Load the libraries")
 library(rvest)
 library(mongolite)
+library(dplyr)
+library(httr)
 
 message("Scraping Data Pada Website")
 data<-data.frame()
 page = 100
 for (i in 1:page){
   url <- paste0("https://www.goodreads.com/quotes?pages=",i)
+  url %>% GET(., timeout(30)) %>% read_html
   html <- read_html(url)
   quote<- html_text(html_nodes(html, ".quoteText"), trim=T)
   by<- html_text(html_nodes(html, "span.authorOrTitle"), trim=T)
@@ -31,6 +34,6 @@ atlas <- mongo(
 )
 
 message("Masukkan Data Frame ke MongoDB Cloud")
-atlas$insert(data[sample(1:nrow(data),1),])
+atlas$insert(data)
 
 rm(atlas)
