@@ -3,10 +3,10 @@ name: Daily Popular Quotes
 on:
   schedule:
     - cron: '0 */8 * * *'  # setiap 8 jam
-
+  workflow_dispatch:
 
 jobs:
-  quotes-scrape:
+  scrape:
     runs-on: macos-latest
     env:
       ATLAS_URL: ${{ secrets.ATLAS_URL }}
