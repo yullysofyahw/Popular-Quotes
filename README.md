@@ -26,6 +26,8 @@ Berikut ini contoh dokumen yang sudah tersimpan pada MongoDB Atlas
 
 Dokumen terdiri dari isi quote, penulis quote dan jumlah like yang diperoleh quote tersebut.
 
+## :camera_flash: Visualisasi
+
 ## :computer: Pengembang
 
 <div align="justify">
