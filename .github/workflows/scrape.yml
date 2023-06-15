@@ -2,7 +2,7 @@ name: Daily Popular Quotes
 
 on:
   schedule:
-    - cron: '0 */8 * * *'  # setiap 8 jam
+    - cron: '0 0 * * *'  # setiap sehari
   workflow_dispatch:
 
 jobs:
