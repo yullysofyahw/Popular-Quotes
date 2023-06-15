@@ -17,7 +17,7 @@ Web yang discraping pada project ini adalah https://www.goodreads.com/quotes. We
 Berikut ini contoh dokumen yang sudah tersimpan pada MongoDB Atlas
 
 <div align="justify">
-<img width="419" alt="Untitled" src="https://github.com/yullysofyahw/Popular-Quotes/assets/111562269/fe526877-9d10-4255-babd-e6722f72d4bb">
+{"_id":{"$oid":"6483cf62f1abafadbc004eb1"},"isiquote":"A room without books is like a body without a soul.","penulis":"Marcus Tullius Cicero","like":"131042"}
 </div>
 
 Dokumen terdiri dari isi quote, penulis quote dan jumlah like yang diperoleh quote tersebut.
