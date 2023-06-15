@@ -34,6 +34,6 @@ atlas <- mongo(
 )
 
 message("Masukkan Data Frame ke MongoDB Cloud")
-atlas$insert(data[sample(1:nrow(data),15),])
+atlas$insert(data[sample(1:nrow(data),1),])
 
 rm(atlas)
