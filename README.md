@@ -14,13 +14,14 @@ Web yang discraping pada project ini adalah https://www.goodreads.com/quotes. We
 
 ## :blue_book: Dokumen
 
-Berikut ini contoh dokumen yang sudah tersimpan pada MongoDB Atlas
+Berikut ini contoh dokumen yang sudah tersimpan pada MongoDB Atlas :
 
 ```
 {
 "_id":{"$oid":"6483cf62f1abafadbc004eb1"},
 "isiquote":"A room without books is like a body without a soul.",
-"penulis":"Marcus Tullius Cicero","like":"131042"
+"penulis":"Marcus Tullius Cicero",
+"like":"131042"
 }
 ```
 
